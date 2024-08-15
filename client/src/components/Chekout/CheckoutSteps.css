@@ -1,0 +1,21 @@
+.checkout-steps {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+
+.step {
+  flex: 1;
+  padding: 10px;
+  text-align: center;
+  border-bottom: 2px solid #ddd;
+  cursor: not-allowed;
+  color: #999;
+}
+
+.step.active {
+  border-bottom: 2px solid #FA8232;
+  color: #FA8232;
+  cursor: pointer; 
+  text-decoration: none;
+}

@@ -1,0 +1,135 @@
+/* Footer.css */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Oxygen:wght@300;400;700&display=swap');
+.footer {
+    background-color: #1B6392;
+    color: #fff;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .footer-top {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  .container{
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+  }
+  .footer-logo img {
+    max-width: 300px;
+    height: 100px;
+  }
+  
+  .footer-subscribe {
+    display: flex;
+    align-items: center;
+   
+  }
+  
+  .footer-subscribe input {
+    border : 1px solid #DFDFDF;
+    width: 193px;
+    height: 49px;
+    background-color: #1B6392;
+    color: white;
+    font-family: "Oxygen", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .footer-subscribe button {
+    width: 133px;
+    border: none;
+    background-color: #FFFF;
+    color: #1B6392;
+    cursor: pointer;
+    height: 53px;
+  }
+  
+  .footer-description {
+    max-width: 300px;
+    margin-top: 20px;
+    font-family: "Oxygen", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .footer-links {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    flex-wrap: wrap;
+  }
+  
+  .footer-column {
+    margin-bottom: 20px;
+  }
+  
+  .footer-column h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-family: "Oxygen", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  }
+  
+  .footer-column ul {
+    margin-right: 70px;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   
+  }
+  
+  .footer-column ul li {
+    margin-bottom: 8px;
+    margin-top: 20px;
+  }
+  
+  .footer-column ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+    font-family: "Oxygen", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .footer-column ul li a:hover {
+    color: #ff6600;
+  }
+  
+  .footer-social {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .footer-social a {
+    margin: 0 10px;
+    display: inline-block;
+  }
+  
+  .footer-social img {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .footer-copy {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+  }
+  .line-horizontal{
+    border-bottom: 1px solid #DFDFDF; 
+    width: 100%; 
+    margin: 20px 0; 
+  }

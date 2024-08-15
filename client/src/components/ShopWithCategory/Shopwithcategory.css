@@ -1,0 +1,32 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+.maincategory{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.name-catgory a{
+     
+  font-family: "Public Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  text-decoration: none;
+  color: #191C1F;
+}
+#image-category{
+    width: 9.25rem;
+    height: 9.25rem;
+}
+h3{
+    
+    text-decoration: none;
+}
+
+.category{
+    padding: 30px;
+}
+.category-swiper{
+    padding: 30px;
+    margin-left: 30px
+}

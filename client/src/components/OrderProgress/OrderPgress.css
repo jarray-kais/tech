@@ -1,0 +1,60 @@
+.order-progress {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .progress-steps {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    margin-top: 20px;
+    position: relative;
+  }
+  
+  .stepp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .stepp img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+  }
+  
+  .stepp span {
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .completed img {
+    filter: grayscale(0%);
+  }
+  
+  .step:not(.completed) img {
+    filter: grayscale(100%);
+  }
+  
+  .progress-steps::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background-color: #f0f0f0;
+    z-index: -1;
+  }
+  
+  .step.completed::before {
+    background-color: #ff7e00;
+  }
+  
+
+  .stepp:not(.completed)::before {
+    background-color: #ff7e00;
+  }
