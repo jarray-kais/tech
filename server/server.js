@@ -306,3 +306,21 @@ io.on('connection', (socket) => {
 httpServer.listen(PORT, () => {
     console.log(`Serve at http://localhost:${PORT}`);
 });
+
+// Fonction pour envoyer le message à Tidio
+async function sendToTidio(message) {
+    const response = await fetch('https://api.tidiochat.com/api/message', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+            'Authorization': `Bearer ${tidioApiKey}`
+        },
+        body: JSON.stringify({
+            message: message.content,
+            sender: message.sender,
+            timestamp: message.timestamp,
+            sessionId: message._id
+        })
+    });
+    return response.json();
+}
