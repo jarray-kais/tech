@@ -266,7 +266,42 @@ io.on('connection', (socket) => {
                 console.log('Admin is offline, message will be delivered when they come online.');
             }
         }
-    });
+     // Envoi du message à Tidio
+     sendToTidio(completeMessage)
+     .then(response => {
+         console.log('Tidio response:', response);
+
+         // Si Tidio répond, on arrête ici
+         if (response.status === 'success') {
+             return;
+         }
+
+         // Si Tidio ne répond pas, redirigez le message à l'admin
+         if (!message.isAdmin) {
+             const admin = users.find((x) => x.isAdmin && x.online);
+             if (admin) {
+                 io.to(admin.socketId).emit('message', completeMessage);
+                 console.log('Redirecting message to admin:', admin);
+             } else {
+                 console.log('Admin is offline, message will be delivered when they come online.');
+             }
+         }
+     })
+     .catch(err => {
+         console.error('Error sending message to Tidio:', err);
+
+         // En cas d'erreur avec Tidio, redirigez le message à l'admin
+         if (!message.isAdmin) {
+             const admin = users.find((x) => x.isAdmin && x.online);
+             if (admin) {
+                 io.to(admin.socketId).emit('message', completeMessage);
+                 console.log('Redirecting message to admin:', admin);
+             } else {
+                 console.log('Admin is offline, message will be delivered when they come online.');
+             }
+         }
+     });
+});
 })
 httpServer.listen(PORT, () => {
     console.log(`Serve at http://localhost:${PORT}`);
