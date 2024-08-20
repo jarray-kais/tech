@@ -108,6 +108,7 @@ const io = new Server(httpServer, {  cors: {
   },
  });
 const users = [];
+const tidioApiKey = 'your-private-api-key';
 
 
 io.on('connection', (socket) => {
