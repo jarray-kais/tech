@@ -7,6 +7,9 @@ This is a full-stack e-commerce application built with the MERN stack (MongoDB, 
 - **Product Management:** Add, update, and remove products.
 - **Search and Filters:** Elasticsearch integration for fast and accurate product search.
 - **Responsive Design:** Optimized for both desktop and mobile devices.
+- **User Management:** Manage user roles and permissions within the platform.
+- **Payment Integration:** Secure payment processing with **Flouci** for smooth transactions.
+- **Email Notifications:** Automated email notifications for user activities, such as account registration and order confirmation.
 
 ## Getting Started
 
