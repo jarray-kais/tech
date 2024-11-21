@@ -283,7 +283,7 @@ async function reindexData() {
   }
 }
 async function updateMappingsAndReindex() {
-  /* await createNewIndex(); */
+   await createNewIndex(); 
   await reindexData();
 
 }
