@@ -17,7 +17,7 @@ This is a full-stack e-commerce application built with the MERN stack (MongoDB, 
 
 Make sure you have the following installed on your system:
 
-- [Node.js](https://nodejs.org/) (v14 or higher) (v20.15.0)
+- [Node.js](https://nodejs.org/)  (v20.15.0)
 - [MongoDB](https://www.mongodb.com/) (locally or via cloud service)
 - [Elasticsearch](https://www.elastic.co/elasticsearch/) (locally or via cloud service)
 
